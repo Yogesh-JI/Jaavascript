@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    /* Add some styling for the login form */
+    .login-form {
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .login-form input[type="submit"] {
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .login-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-form">
+    <form>
+      <h2>Login</h2>
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" value="yogi"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" value="reshu"><br><br>
+      <input type="submit" value="Submit" href="https://chat.openai.com/chat">
+    </form> 
+  </div>
+  <script>
+    const form = document.querySelector('login-form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  // Get the values of the username and password fields
+  const username = form.elements.username.value;
+  const password = form.elements.password.value;
+  // Perform the login process using the username and password
+});
+
+  </script>
+</body>
+</html>
+
+
+
+
